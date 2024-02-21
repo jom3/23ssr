@@ -1,9 +1,7 @@
 <div class="w-[400px] max-h-[500px] min-h-[500px] overflow-hidden flex flex-col items-center border-2 border-black border-opacity-25 p-2 rounded-lg">
   <img src={{product.image}} alt="blog" class="max-h-[200px] object-cover">
   <h2 class="text-2xl">{{product.category | titlecase}}</h2>
-  <p class=" p-2 text-center font-bold">{{product.title}}</p>
-  <p class="p-3 overflow-y-scroll">{{product.description}}</p>
-  <div class="w-full flex flex-row justify-center items-center p-5">
+  <p align="center"><b>{{product.title}}</b></p>
+  <p class="overflow-auto">{{product.description}}</p>
     <a [routerLink]="['/products/product-details',product.id]" routerLinkActive="router-link-active" class="p-2 bg-blue-400 rounded-md font-bold">Learn more</a>
-  </div>
 </div>
