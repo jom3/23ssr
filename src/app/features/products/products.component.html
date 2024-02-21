@@ -1,0 +1,8 @@
+
+@if (products$ | async; as products) {
+  <div class="w-full flex flex-row flex-wrap items-center gap-10 justify-center my-20">
+  @for (product of products; track product.id) {
+      <app-product-card [product]="product"></app-product-card>
+    }
+  </div>
+  }
